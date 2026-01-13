@@ -1,0 +1,18 @@
+<!-- footer_custom.html — extensão do footer (Just the Docs) -->
+<div class="uel-footer">
+  <div>
+    © {{ "now" | date: "%Y" }} <strong>{{ site.title }}</strong>
+    <span style="opacity:.7;">•</span>
+    <span style="opacity:.7;">Local‑first • GitHub Pages</span>
+  </div>
+
+  <nav class="uel-footer__links" aria-label="Links do rodapé">
+    <a href="{{ "/license/" | relative_url }}">Licença</a>
+    <a href="{{ "/contributing/" | relative_url }}">Contribuindo</a>
+    <a href="{{ "/contact/" | relative_url }}">Contato</a>
+    <a href="{{ "/changelog/" | relative_url }}">Changelog</a>
+    {% if site.github.repository_url %}
+      <a href="{{ site.github.repository_url }}/issues">Issues</a>
+    {% endif %}
+  </nav>
+</div>

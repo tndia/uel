@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#0b1020"/>
+  <meta name="description" content="Planner UEL Pro: planejamento, revisão espaçada, simulados e redação (GitHub Pages)."/>
+  <title>Plano semanal • Planner UEL Pro</title>
+  <link rel="manifest" href="./manifest.webmanifest"/>
+  <link rel="icon" href="./assets/img/icon-192.png"/>
+  <link rel="stylesheet" href="./assets/css/app.css"/>
+  <link rel="stylesheet" href="./assets/css/print.css" media="print"/>
+  
+</head>
+<body data-page="planner.html">
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<header class="topbar" role="banner">
+  <div class="topbar-inner">
+    <button class="iconbtn" id="drawerBtn" type="button" aria-label="Abrir menu">☰ Menu</button>
+    <a href="./index.html" style="font-weight:900;text-decoration:none;">Planner UEL Pro</a>
+    <a class="iconbtn" href="./setup.html" aria-label="Configuração">⚙️</a>
+  </div>
+  <div class="drawer" id="drawer"></div>
+</header>
+
+<div class="container">
+  <div class="shell">
+    <aside class="sidebar" id="sidebar" aria-label="Menu lateral"></aside>
+
+    <main id="main" aria-label="Conteúdo principal">
+      <section class="page">
+        <div class="hero">
+          <h1 class="h-title">Plano semanal</h1>
+          <p class="h-sub">Gere uma agenda inteligente e salve no calendário.</p>
+        </div>
+        <div class="content">
+          
+<div class="grid">
+  <div class="card" style="grid-column: span 12;">
+    <div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-end;flex-wrap:wrap;">
+      <div class="field" style="min-width:220px;">
+        <label for="weekStart">Semana a partir de</label>
+        <input id="weekStart" type="date"/>
+      </div>
+      <div>
+        <div style="font-weight:900;" id="phaseName">—</div>
+        <div style="color:var(--muted);font-size:12px;margin-top:2px;" id="sessionsInfo">—</div>
+      </div>
+      <div class="row">
+        <button class="btn secondary" id="btnGenerate">Gerar</button>
+        <button class="btn" id="btnAdopt">Salvar no calendário</button>
+      </div>
+    </div>
+    <div class="notice" style="margin-top:12px;">
+      O plano se adapta a: tempo disponível, matérias fracas e (se aplicável) disciplinas da discursiva.
+    </div>
+  </div>
+
+  <div id="weekBox" class="grid" style="grid-column: span 12;"></div>
+</div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script type="module" src="./assets/js/planner.page.js"></script>
+</body>
+</html>
