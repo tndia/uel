@@ -1,8 +1,0 @@
-source "https://rubygems.org"
-
-# Mantém o ambiente local alinhado com o compilador do GitHub Pages.
-# Veja versões em: https://pages.github.com/versions/
-gem "github-pages", group: :jekyll_plugins
-
-# Ruby >= 3 costuma precisar do webrick para `jekyll serve`
-gem "webrick", "~> 1.8"
