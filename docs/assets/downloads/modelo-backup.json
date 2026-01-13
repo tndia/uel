@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-13T00:00:00.000Z",
+    "version": "2.0.0"
+  },
+  "config": {
+    "examDate": "2026-11-15",
+    "track": "geral",
+    "targetCourse": "Exemplo (edite)",
+    "language": "ingles",
+    "sessionMinutes": 50,
+    "weeklyHoursTarget": 12,
+    "availability": {
+      "mon": 90,
+      "tue": 90,
+      "wed": 90,
+      "thu": 90,
+      "fri": 60,
+      "sat": 120,
+      "sun": 60
+    },
+    "strengths": {
+      "lp": 2,
+      "mat": 1
+    }
+  },
+  "progress": {
+    "modules": {
+      "lp_mod_exemplo": {
+        "mastery": 1,
+        "lastStudied": "2026-01-10T12:00:00.000Z",
+        "nextReview": "2026-01-14T12:00:00.000Z",
+        "lapses": 0
+      }
+    },
+    "streak": {
+      "current": 3,
+      "best": 5,
+      "lastActive": "2026-01-13"
+    },
+    "pomodoro": {
+      "totalMinutes": 150,
+      "sessions": [
+        {
+          "date": "2026-01-12",
+          "minutes": 50,
+          "subjectId": "lp"
+        },
+        {
+          "date": "2026-01-13",
+          "minutes": 100,
+          "subjectId": "mat"
+        }
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Revisar interpretação (exemplo)",
+      "date": "2026-01-14",
+      "type": "review",
+      "subjectId": "lp",
+      "moduleId": "lp_mod_exemplo",
+      "durationMin": 50,
+      "status": "todo",
+      "notes": ""
+    }
+  ],
+  "flashcards": [],
+  "submissions": [
+    {
+      "id": "r1",
+      "date": "2026-01-11",
+      "theme": "Tema exemplo",
+      "text": "Texto exemplo (substitua).",
+      "selfScore": 700,
+      "notes": "Pontos a melhorar..."
+    }
+  ],
+  "errors": [
+    {
+      "id": "e1",
+      "date": "2026-01-12",
+      "subjectId": "mat",
+      "moduleId": "",
+      "what": "Errei regra de 3",
+      "why": "Confundi unidades",
+      "fix": "Refazer 10 exercícios focados"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Troubleshooting · Planner UEL Pro</title>
+  
+  <meta property="og:title" content="Troubleshooting">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <link rel="canonical" href="">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../">
+      <img src="../assets/img/logo.svg" alt="" width="28" height="28">
+      <span>Planner UEL Pro</span>
+    </a>
+
+    <button class="icon-btn mobile-only" type="button" aria-label="Abrir menu" data-toggle="nav">
+      <span class="icon icon-menu" aria-hidden="true"></span>
+    </button>
+
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a class="" href="../">Início</a>
+      <a class="" href="../docs/">Documentação</a>
+      <a class="" href="../reference/">Referência</a>
+      <a href="../app/">App</a>
+      <a href="../downloads/">Downloads</a>
+      <a href="../faq/">FAQ</a>
+      <a href="https://github.com/tndia/uel" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="search" placeholder="Buscar… (Ctrl/⌘ K)" aria-label="Buscar no site" id="site-search">
+        <div class="search-results" id="search-results" hidden></div>
+      </div>
+
+      <button class="icon-btn" type="button" aria-label="Alternar tema" data-toggle="theme">
+        <span class="icon icon-sun" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="layout layout-doc">
+  
+  <aside class="sidebar" id="sidebar" aria-label="Navegação lateral">
+    <div class="sidebar-inner">
+      <div class="sidebar-search mobile-only">
+        <input type="search" placeholder="Buscar…" aria-label="Buscar no site" id="site-search-mobile">
+      </div>
+      
+    <div class="nav-block">
+      <div class="callout tip">
+        <strong>Atalho</strong>
+        Use <code>Ctrl/⌘ + K</code> para buscar em qualquer página.
+      </div>
+    </div>
+    
+        <details  class="nav-section">
+          <summary>Documentação</summary>
+          <div class="nav-links"><a class="" href="../docs/backup-restore/">Backup e restauração</a>
+<a class="" href="../docs/getting-started/">Primeiros passos</a>
+<a class="" href="../docs/publish/">Publicar no GitHub Pages</a>
+<a class="" href="../docs/setup/">Configuração</a>
+<a class="" href="../docs/offline/">Modo offline (PWA)</a>
+<a class="" href="../docs/local-development/">Rodar localmente</a>
+<a class="" href="../docs/architecture/">Arquitetura do repositório</a>
+<a class="" href="../docs/planning/">Plano semanal</a>
+<a class="" href="../docs/privacy/">Privacidade</a>
+<a class="" href="../docs/browser-support/">Compatibilidade de navegador</a>
+<a class="" href="../docs/site-customization/">Customizar o site (tema)</a>
+<a class="" href="../docs/modules/">Módulos e conteúdo</a>
+<a class="" href="../docs/content-maintenance/">Editar conteúdo do app (JSON)</a>
+<a class="" href="../docs/reviews/">Revisão espaçada</a>
+<a class="" href="../docs/exercises/">Exercícios e banco</a>
+<a class="" href="../docs/writing/">Redação</a>
+<a class="" href="../docs/literature/">Obras</a>
+<a class="" href="../docs/simulados/">Simulados</a>
+<a class="" href="../docs/calendar/">Calendário</a>
+<a class="" href="../docs/">Documentação</a>
+<a class="" href="../docs/guia-de-uso/">Guia de uso</a>
+<a class="" href="../docs/stats/">Estatísticas</a>
+<a class="" href="../docs/study-strategy/">Estratégia de estudo</a>
+<a class="" href="../docs/manutencao/">Manutenção e dados</a>
+<a class="" href="../docs/publicacao/">Publicação</a></div>
+        </details>
+        
+        <details  class="nav-section">
+          <summary>Referência</summary>
+          <div class="nav-links"><a class="" href="../reference/shortcuts/">Atalhos de teclado</a>
+<a class="" href="../reference/storage-schema/">Schema do storage</a>
+<a class="" href="../reference/data-backup/">Backup (guia rápido)</a>
+<a class="" href="../reference/content-data/">Modelo de conteúdo (content.json)</a>
+<a class="" href="../reference/">Referência</a>
+<a class="" href="../reference/exercises-data/">Banco de exercícios (exercises.json)</a>
+<a class="" href="../reference/writing-prompts/">Prompts de redação (writing_prompts.json)</a>
+<a class="" href="../reference/service-worker-cache/">Service Worker e cache</a>
+<a class="" href="../reference/urls/">Rotas e URLs</a>
+<a class="" href="../reference/offline/">Offline e PWA (guia rápido)</a></div>
+        </details>
+        
+        <details open class="nav-section">
+          <summary>Projeto</summary>
+          <div class="nav-links"><a class="" href="../downloads/">Downloads</a>
+<a class="" href="../faq/">FAQ</a>
+<a class="" href="../license/">Licença</a>
+<a class="active" href="../troubleshooting/">Troubleshooting</a>
+<a class="" href="../changelog/">Changelog</a>
+<a class="" href="../about/">Sobre</a>
+<a class="" href="../contact/">Contato</a>
+<a class="" href="../contributing/">Contribuindo</a></div>
+        </details>
+        
+      <div class="sidebar-footer">
+        <a href="https://github.com/tndia/uel" target="_blank" rel="noreferrer">Ver no GitHub</a>
+        <a href="../contact/">Contato</a>
+      </div>
+    </div>
+  </aside>
+  
+
+  <main id="main" class="content">
+    
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <span class="crumbs"><a href="../">Início</a> <span class='sep'>/</span> <span aria-current="page">Troubleshooting</span></span>
+    </nav>
+    
+    <article class="article">
+      <h1>Troubleshooting</h1>
+<h2 id="o-site-docs-aparece-em-branco-css-quebrado">O site (docs) aparece em branco / CSS quebrado<a aria-label="Link permanente" class="heading-anchor" href="#o-site-docs-aparece-em-branco-css-quebrado">¶</a></h2>
+<p>Quase sempre é <code>baseurl</code> incorreto.</p>
+<ul>
+<li><strong>Project Pages</strong>: <code>baseurl: "/nome-do-repo"</code></li>
+<li><strong>User Pages</strong>: <code>baseurl: ""</code></li>
+</ul>
+<p>Guia: <strong><a href="../docs/publish/">Publicar no GitHub Pages</a></strong>.</p>
+<h2 id="links-internos-quebrados-404">Links internos quebrados (404)<a aria-label="Link permanente" class="heading-anchor" href="#links-internos-quebrados-404">¶</a></h2>
+<ul>
+<li>Confirme se você está usando links com <code>relative_url</code> (no site Jekyll).</li>
+<li>Rode localmente simulando <code>baseurl</code>:</li>
+</ul>
+<div class="codehilite">
+<pre><span></span><code>bundle<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>jekyll<span class="w"> </span>serve<span class="w"> </span>--baseurl<span class="w"> </span><span class="s2">"/nome-do-repo"</span>
+</code></pre>
+</div>
+<h2 id="o-app-nao-atualiza-depois-do-deploy">O app não atualiza depois do deploy<a aria-label="Link permanente" class="heading-anchor" href="#o-app-nao-atualiza-depois-do-deploy">¶</a></h2>
+<p>Pode ser cache do navegador ou do Service Worker.</p>
+<ol>
+<li>Faça hard refresh</li>
+<li>Se persistir, limpe dados do site (cuidado: isso apaga seu progresso → faça backup antes!)</li>
+</ol>
+<p>Veja: <strong><a href="../docs/offline/">Modo offline</a></strong>.</p>
+<h2 id="perdi-meus-dados">Perdi meus dados<a aria-label="Link permanente" class="heading-anchor" href="#perdi-meus-dados">¶</a></h2>
+<p>Se você tem um backup <code>.json</code>, é só importar.</p>
+<p>Guia: <strong><a href="../docs/backup-restore/">Backup e restauração</a></strong>.</p>
+<p>Se não tem backup:</p>
+<ul>
+<li>tente ver se outro navegador/perfil tem os dados,</li>
+<li>verifique se você estava em modo anônimo.</li>
+</ul>
+<h2 id="rodando-localmente-da-erro-de-gems">“Rodando localmente” dá erro de gems<a aria-label="Link permanente" class="heading-anchor" href="#rodando-localmente-da-erro-de-gems">¶</a></h2>
+<ul>
+<li>Confirme que você tem Ruby + Bundler.</li>
+<li>Rode <code>bundle install</code> de novo.</li>
+<li>O gem <code>github-pages</code> ajuda a alinhar versões.</li>
+</ul>
+<h2 id="onde-reportar-bugs">Onde reportar bugs?<a aria-label="Link permanente" class="heading-anchor" href="#onde-reportar-bugs">¶</a></h2>
+<p>Abra uma issue no repositório (link em <strong>Contato</strong>).</p>
+
+      
+      <p class="edit-link"><a href="https://github.com/tndia/uel/blob/main/site-src/troubleshooting.md" target="_blank" rel="noreferrer">Editar esta página no GitHub</a></p>
+      
+    </article>
+  </main>
+
+  
+  <aside class="toc" aria-label="Nesta página">
+    <div class="toc-inner">
+      <div class="toc-title">Nesta página</div>
+      <nav><a class="lvl2" href="#o-site-docs-aparece-em-branco-css-quebrado">O site (docs) aparece em branco / CSS quebrado</a><a class="lvl2" href="#links-internos-quebrados-404">Links internos quebrados (404)</a><a class="lvl2" href="#o-app-nao-atualiza-depois-do-deploy">O app não atualiza depois do deploy</a><a class="lvl2" href="#perdi-meus-dados">Perdi meus dados</a><a class="lvl2" href="#rodando-localmente-da-erro-de-gems">“Rodando localmente” dá erro de gems</a><a class="lvl2" href="#onde-reportar-bugs">Onde reportar bugs?</a></nav>
+    </div>
+  </aside>
+  
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Planner UEL Pro</strong><br>
+      <span class="muted">Local-first · Offline · Privacidade</span>
+    </div>
+    <div class="footer-links">
+      <a href="../about/">Sobre</a>
+      <a href="../license/">Licença</a>
+      <a href="../contributing/">Contribuindo</a>
+      <a href="https://github.com/tndia/uel/issues" target="_blank" rel="noreferrer">Issues</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" type="button" aria-label="Voltar ao topo" data-toggle="top" hidden>↑</button>
+
+<script>window.__ROOT__="../"; window.SITE_REPO_URL="https://github.com/tndia/uel";</script>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

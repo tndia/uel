@@ -1,0 +1,266 @@
+[
+  {
+    "title": "Início",
+    "url": "",
+    "section": "Projeto",
+    "content": "Estude com clareza. Evolua com consistência. O Planner UEL Pro é um app local-first para organizar sua rotina de estudos: planejamento semanal, revisão espaçada, exercícios, redação, simulados e estatísticas — tudo no seu navegador, com foco em privacidade e uso offline. Abrir o app Ler a documentação Guia de referência Baixar materiais ✅ Funciona offline 🔒 Sem login 📱 Mobile-first ⚡ Rápido Planejamento semanal Transforme metas e disponibilidade em um plano executável — com foco no que importa hoje. Como planejar Revisão espaçada Reforce o que você aprende com revisões inteligentes e uma rotina simples de manter. Como revisar Backup e privacidade Seus dados ficam no seu dispositivo. Faça backup/restore com segurança quando quiser. Backup & restore Começando em 2 minutos Abra o app . Preencha Configuração (prova, carga, disponibilidade). Gere o plano em Plano semanal . Siga a rotina: Revisões → Exercícios → Redação/Simulados. Primeiros passos Estrutura do site Documentação : guias de uso e manutenção. Referência : schema, offline, URLs e atalhos. Changelog e páginas de projeto: FAQ, troubleshooting, licença. Dica: use Ctrl/⌘ + K para buscar. Abrir documentação Abrir referência"
+  },
+  {
+    "title": "Sobre",
+    "url": "about/",
+    "section": "Projeto",
+    "content": "Sobre O Planner UEL Pro é um projeto de organização de estudos com princípios: Local-first : seus dados ficam com você. Sem dependências externas frágeis : app estático simples. Documentação no repositório : fácil manter e publicar no Pages. Estrutura ¶ App: /app/ Docs: /docs/ Referência: /reference/ Licença ¶ Veja: Licença ."
+  },
+  {
+    "title": "Contato",
+    "url": "contact/",
+    "section": "Projeto",
+    "content": "Contato e links Issues : use para bugs e melhorias. Discussions : use para dúvidas e ideias (se habilitado). Forks : se você fizer um fork público, cite a origem e mantenha a licença. Dica: adicione aqui links reais do seu repositório (Issues/Discussions) quando publicar."
+  },
+  {
+    "title": "Downloads",
+    "url": "downloads/",
+    "section": "Projeto",
+    "content": "Downloads Esta seção reúne materiais offline para complementar o uso do app. Manual (PDF) : Manual do usuário Checklist imprimível (PDF) : Checklist de rotina e revisão Exemplo de backup (.json) : modelo-backup.json Observações ¶ PDFs e arquivos aqui são opcionais : o app funciona 100% sem eles. O backup do app é local-first (salvo no navegador). Use export/import para não perder dados: Backup e restauração ."
+  },
+  {
+    "title": "FAQ",
+    "url": "faq/",
+    "section": "Projeto",
+    "content": "FAQ O app é “online”? Precisa de login? ¶ Não. Ele é local‑first : roda no navegador e não exige login. Os dados ficam no seu dispositivo. Vou perder meus dados? ¶ Você pode perder se o navegador limpar o armazenamento (limpeza, modo anônimo, reinstalação, etc.). Por isso, faça backup semanal : Backup e restauração . Funciona no celular? ¶ Sim. O layout é responsivo e você pode usar como “app” fixando na tela inicial (varia por sistema). Funciona sem internet? ¶ Depois do primeiro carregamento, o app usa cache offline (Service Worker). Veja: Modo offline . Posso mudar o conteúdo (módulos, banco, obras)? ¶ Sim. O conteúdo do app está em JSON: app/assets/data/content.json app/assets/data/exercises.json app/assets/data/writing_prompts.json Veja a referência: Modelo de conteúdo . Isso é oficial da UEL? ¶ Não. É um projeto comunitário para organização de estudo. Como contribuir? ¶ Veja: Contribuindo ."
+  },
+  {
+    "title": "Troubleshooting",
+    "url": "troubleshooting/",
+    "section": "Projeto",
+    "content": "Troubleshooting O site (docs) aparece em branco / CSS quebrado ¶ Quase sempre é baseurl incorreto. Project Pages : baseurl: \"/nome-do-repo\" User Pages : baseurl: \"\" Guia: Publicar no GitHub Pages . Links internos quebrados (404) ¶ Confirme se você está usando links com relative_url (no site Jekyll). Rode localmente simulando baseurl : bundle exec jekyll serve --baseurl \"/nome-do-repo\" O app não atualiza depois do deploy ¶ Pode ser cache do navegador ou do Service Worker. Faça hard refresh Se persistir, limpe dados do site (cuidado: isso apaga seu progresso → faça backup antes!) Veja: Modo offline . Perdi meus dados ¶ Se você tem um backup .json , é só importar. Guia: Backup e restauração . Se não tem backup: tente ver se outro navegador/perfil tem os dados, verifique se você estava em modo anônimo. “Rodando localmente” dá erro de gems ¶ Confirme que você tem Ruby + Bundler. Rode bundle install de novo. O gem github-pages ajuda a alinhar versões. Onde reportar bugs? ¶ Abra uma issue no repositório (link em Contato )."
+  },
+  {
+    "title": "Changelog",
+    "url": "changelog/",
+    "section": "Projeto",
+    "content": "Changelog Este arquivo resume mudanças relevantes do projeto (docs + app). Onde ver histórico completo? ¶ Releases do GitHub (quando usadas) são o lugar ideal para notas completas. Se você usa tags, conecte cada versão a uma release. Estrutura sugerida ¶ Added : novas features Changed : mudanças de comportamento Fixed : correções Security : avisos de segurança Se você preferir, pode manter um CHANGELOG.md “Keep a Changelog style” e usar as releases só para links. Versão atual do app ¶ O app indica a versão no menu lateral (ex.: v2 • 2026 )."
+  },
+  {
+    "title": "Contribuindo",
+    "url": "contributing/",
+    "section": "Projeto",
+    "content": "Contribuindo Para manter o projeto saudável e fácil de publicar no GitHub Pages: Prefira mudanças pequenas e revisáveis. Não inclua segredos (tokens, chaves etc.). Evite dependências pesadas ou builds complexos. Documente mudanças de comportamento no app e nas docs. Fluxo sugerido ¶ Abra uma issue descrevendo o problema/ideia. Faça um fork e crie uma branch. Envie um pull request com descrição clara e screenshots quando fizer sentido. Padrões ¶ Markdown: headings em ordem (H2/H3), exemplos curtos e objetivos. Código: comentários mínimos e nomes claros. Dados: valide JSON (sem trailing commas). Obrigado!"
+  },
+  {
+    "title": "Licença",
+    "url": "license/",
+    "section": "Projeto",
+    "content": "Licença (MIT) O texto completo da licença está no arquivo LICENSE ."
+  },
+  {
+    "title": "Documentação",
+    "url": "docs/",
+    "section": "Documentação",
+    "content": "Documentação Aqui você encontra um guia completo para usar , manter e publicar o Planner UEL Pro no GitHub Pages. Novo por aqui? Vá para Primeiros passos . Quer hospedar o seu fork? Veja Publicação no GitHub Pages . Dúvidas comuns? Confira FAQ e Troubleshooting ."
+  },
+  {
+    "title": "Primeiros passos",
+    "url": "docs/getting-started/",
+    "section": "Documentação",
+    "content": "Primeiros passos O objetivo aqui é você sair do zero para “uso diário” em poucos minutos. 1) Abra o app ¶ O app está em /app/ : Abrir agora: App Se você estiver em Project Pages , sua URL será algo como https://usuario.github.io/nome-do-repo/app/ . 2) Faça a configuração mínima ¶ Abra a página Configuração : Link direto: Configuração Preencha pelo menos: Trilha : geral ou discursiva Idioma : inglês ou espanhol (se aplicável) Carga semanal alvo e disponibilidade por dia (Opcional) data da prova Recomendação: comece com uma meta realista e ajuste depois de 1 semana. 3) Gere seu plano semanal ¶ Acesse Plano semanal : Plano semanal O plano sugere o que estudar em blocos (sessões) conforme: disponibilidade por dia módulos/conteúdos cadastrados ritmo de revisões 4) Rotina diária (o “núcleo”) ¶ Fluxo recomendado: Painel : visão geral do dia Painel Revisões : faça o que está vencendo primeiro Revisões Exercícios : pratique e registre erros Exercícios Discursiva (se usar): redação e obras Redação Obras Simulados (semanal/quinzenal): tempo + checklist Simulados 5) Backup (não pule isso) ¶ Como os dados ficam no navegador, faça um export semanal: Guia: Backup e restauração Dica: salve o arquivo de backup em 2 lugares (ex.: computador + pendrive)."
+  },
+  {
+    "title": "Publicar no GitHub Pages",
+    "url": "docs/publish/",
+    "section": "Documentação",
+    "content": "Publicar no GitHub Pages O GitHub Pages pode publicar seu site de duas formas: 1) Deploy from a branch (build padrão do Pages) 2) GitHub Actions (build customizado e deploy) Para este repositório, a opção mais simples e robusta é Deploy from a branch porque: usamos tema via remote_theme , usamos apenas plugins permitidos, não há build customizado do app. Documentação oficial: GitHub Pages (configuração): https://docs.github.com/en/pages A) Publicar a partir de um branch (recomendado) ¶ 1. Pré-requisito ¶ Seu conteúdo do site está na raiz do repositório (este template já está). 2. Configurar no GitHub (cliques) ¶ Abra Settings do repositório Vá em Pages Em Build and deployment → Source , selecione Deploy from a branch Em Branch , selecione: Branch: main Folder: / (root) Clique em Save 3. Ajustar url e baseurl (muito importante) ¶ No _config.yml : Project Pages (URL com o nome do repo): https://usuario.github.io/nome-do-repo/ url: \"https://usuario.github.io\"\nbaseurl: \"/nome-do-repo\" User/Org Pages (URL sem nome de repo): https://usuario.github.io/ url: \"https://usuario.github.io\"\nbaseurl: \"\" Dica: este site usa relative_url nos links, o que reduz erros de baseurl . B) Quando usar GitHub Actions ¶ Use Actions se você precisar de: plugins fora do github-pages , build customizado, controle de versão de Ruby/Gems, etapas extras (ex.: gerar docs a partir de outra fonte). Guia oficial (Actions + Pages): https://docs.github.com/en/pages/getting-started-with-github-pages/using-github-actions-with-pages Existe um workflow opcional em: .github/workflows/pages.yml.example (renomeie para ativar). Domínio customizado (CNAME) ¶ Se você já usa domínio: Mantenha/crie um arquivo CNAME na raiz com seu domínio (uma linha). Em Settings → Pages , configure Custom domain . Ajuste DNS conforme instruções do GitHub. Aviso: não coloque tokens/segredos no repositório."
+  },
+  {
+    "title": "Rodar localmente",
+    "url": "docs/local-development/",
+    "section": "Documentação",
+    "content": "Rodar localmente Rodar localmente evita “push e reza”: você valida links, navegação e baseurl antes do deploy. Pré-requisitos ¶ Ruby + Bundler Git Este repositório usa o gem github-pages para aproximar seu ambiente local do GitHub Pages. Passo a passo ¶ bundle install\nbundle exec jekyll serve Acesse: http://localhost:4000 Simular Project Pages (baseurl) ¶ Se seu site for https://usuario.github.io/nome-do-repo/ , rode: bundle exec jekyll serve --baseurl \"/nome-do-repo\" Dicas de debug ¶ Links quebrados quase sempre são baseurl incorreto. Se o tema não carregar localmente, rode bundle install novamente. Se você alterou SCSS e não refletiu, reinicie o jekyll serve ."
+  },
+  {
+    "title": "Arquitetura do repositório",
+    "url": "docs/architecture/",
+    "section": "Documentação",
+    "content": "Arquitetura do repositório Este repositório tem duas camadas : 1) Site (Jekyll) — raiz do repo ¶ Objetivo: documentação, navegação, páginas institucionais e SEO básico. _config.yml — configurações do Jekyll/tema/coleções index.md — landing _docs/ — coleção de documentação (gera URLs em /docs/... ) _reference/ — coleção de referência (gera URLs em /reference/... ) assets/ — CSS/brand do site e downloads 2) App estático — /app/ ¶ Objetivo: aplicação local-first (HTML/CSS/JS), sem build. /app/*.html — telas do app /app/assets/js/ — lógica (ESM) /app/assets/data/ — banco de conteúdo (JSON) /app/assets/js/sw.js — cache offline Por que separar? ¶ O Pages/Jekyll cuida da documentação (sem “compilar” o app). O app permanece simples (sem pipeline). Você pode evoluir docs e app independentemente. Convenções de links (para não quebrar no Pages) ¶ No site Jekyll, use sempre relative_url (já aplicado nos links principais). No app, os links são relativos dentro de /app/ e não dependem de Jekyll. Onde mexer quando… ¶ Quer mudar o texto do site → index.md e páginas .md Quer adicionar docs → _docs/ e _reference/ Quer alterar comportamento do app → /app/assets/js/ Quer alterar conteúdo do app → /app/assets/data/*.json"
+  },
+  {
+    "title": "Guia de uso",
+    "url": "docs/guia-de-uso/",
+    "section": "Documentação",
+    "content": "Guia de uso Este guia explica o fluxo de estudo recomendado e como usar cada área do app no dia a dia. Fluxo recomendado (bem prático) ¶ Configuração : defina prova, carga semanal e disponibilidade. Plano semanal : o app gera uma agenda inicial (você ajusta conforme sua realidade). Revisão espaçada : todo dia, faça primeiro o que está “vencendo”. Exercícios : pratique o que estudou (e registre erros). Redação / Simulados : use como treino de performance (tempo, checklist, correções). Estatísticas : semanalmente, revise o que está evoluindo e o que precisa de reforço. Dica: comece simples. O app foi pensado para funcionar sem “setup perfeito”."
+  },
+  {
+    "title": "Manutenção e dados",
+    "url": "docs/manutencao/",
+    "section": "Documentação",
+    "content": "Manutenção e dados Como o projeto é local‑first , seus dados ficam no navegador. Isso é ótimo para privacidade, mas exige backup para evitar perdas. Nesta seção você encontra: como funciona o armazenamento local, como exportar/importar backup, como funciona o modo offline, compatibilidade entre navegadores e atualização de versão."
+  },
+  {
+    "title": "Publicação",
+    "url": "docs/publicacao/",
+    "section": "Documentação",
+    "content": "Publicação Guia completo para publicar seu fork no GitHub Pages , respeitando: build padrão do Pages (Jekyll em safe mode), uso correto de url / baseurl , links relativos e rotas estáveis, SEO básico (sitemap/metadata), sem dependências externas frágeis. Comece por: Publicar no GitHub Pages ."
+  },
+  {
+    "title": "Configuração",
+    "url": "docs/setup/",
+    "section": "Documentação",
+    "content": "Configuração Página: Configuração A configuração define o “motor” do app: como distribuir tempo, como priorizar revisões e como adaptar o conteúdo à sua trilha. Campos principais (o que muda de verdade) ¶ Trilha e idioma ¶ Trilha : geral ou discursiva Idioma : inglês ou espanhol Essas escolhas afetam: quais materiais/rotas aparecem, quais checklists e sugestões são ativadas, como você registra atividades de redação/obras. Data da prova ¶ Formato: YYYY-MM-DD Se estiver em branco, o app funciona do mesmo jeito — você só perde algumas sugestões baseadas em prazo. Sessões e carga semanal ¶ sessionMinutes : tempo de uma sessão (ex.: 50min) weeklyHoursTarget : horas alvo por semana Dica: se você usa Pomodoro, configure a sessão para bater com seu ciclo. Disponibilidade por dia ¶ Você informa quanto tempo tem em cada dia. O plano semanal e as sugestões se baseiam nessa matriz. Ajustes finos ¶ Forças por matéria ¶ Você pode marcar sua “força” por matéria (0..3). Isso ajuda a: identificar onde colocar reforço, equilibrar o plano semanal. Checklist rápido ¶ Trilha e idioma Horas/semana alvo Disponibilidade por dia (Opcional) Data da prova (Opcional) Forças por matéria Próximo passo: Plano semanal ."
+  },
+  {
+    "title": "Plano semanal",
+    "url": "docs/planning/",
+    "section": "Documentação",
+    "content": "Plano semanal Página: Plano semanal O plano semanal é um esqueleto de agenda : ele sugere sessões distribuídas ao longo da semana e liga essas sessões a matérias/módulos. Como funciona (em termos práticos) ¶ Você define disponibilidade por dia e tempo de sessão (Configuração). O app cria um conjunto de sessões na semana. Você ajusta manualmente: mover sessões de dia, trocar tema/módulo, alterar duração quando necessário. Bom uso (o que dá resultado) ¶ Regra 80/20 ¶ 80% : rotina diária (revisões + exercícios) 20% : performance (simulados + redação) Alternância (evite “um dia inteiro só de X”) ¶ Intercale matérias para reduzir fadiga e aumentar retenção. “Sessão de recuperação” ¶ Reserve 1 bloco por semana para: revisar erros, ajustar atrasos, organizar a próxima semana. Exemplos de semana (modelos) ¶ Modelo A — 10h/semana ¶ Seg–Sex: 1 sessão por dia Sáb: 2 sessões Dom: 1 sessão + revisão leve Modelo B — 18h/semana ¶ Seg–Sex: 2 sessões/dia (com pausa) Sáb: 3 sessões Dom: 2 sessões + simulado curto Erros comuns ¶ Meta alta demais → vira frustração. Ajuste depois de 1 semana. Ignorar revisões → “parece que estudou”, mas esquece rápido. Sessões longas demais → piora foco. Prefira 40–60min. Próximo passo: Módulos e conteúdo ."
+  },
+  {
+    "title": "Módulos e conteúdo",
+    "url": "docs/modules/",
+    "section": "Documentação",
+    "content": "Módulos e conteúdo Páginas: Módulos Detalhe do módulo O app organiza o estudo em módulos : unidades pequenas com objetivos, checklist, recursos e prática. Como usar “Módulos” ¶ Veja a lista geral por matéria. Marque progresso (“domínio”/mastery) conforme você avança. Use tags para filtrar temas. Como usar “Detalhe do módulo” ¶ Um módulo normalmente traz: Goals : o que você deve dominar Checklist : itens para confirmar antes de “fechar” o tema Resources : links/leitura (sem depender de serviços externos) Practice : exercícios sugeridos EstSessions : estimativa de sessões para completar Dica: trate “domínio 3” como “consigo resolver/explicar sem olhar”. Revisão espaçada ligada a módulos ¶ O app guarda: quando você estudou por último, quando deve revisar, quantas “quedas” (lapses) aconteceram. Isso alimenta a fila de Revisões . Próximo passo: Revisão espaçada ."
+  },
+  {
+    "title": "Revisão espaçada",
+    "url": "docs/reviews/",
+    "section": "Documentação",
+    "content": "Revisão espaçada Página: Revisões A revisão espaçada é o “segredo barato” para não esquecer: você revisa na hora certa , sem revisar tudo sempre. O que fazer todo dia ¶ Abra Revisões . Resolva a fila do dia (comece pelos atrasados). Marque o resultado: ok : mantém/estende o intervalo difícil : reduz/encurta o intervalo errei : volta mais cedo e registra erro (se fizer sentido) Dica: se estiver sem tempo, faça “fila mínima”: 10–15 minutos. Como priorizar ¶ Atrasados > hoje > amanhã Módulos de matérias mais fracas primeiro (se você marcou forças) Quando revisar (exemplo simples) ¶ Dia 0: estudo Dia 1–2: revisão curta Dia 4–7: revisão média Dia 14+: revisão longa O app automatiza a fila, mas você pode “furar” quando necessário. Erros comuns ¶ Pular revisões 3+ dias : a fila vira bola de neve. Revisar “passivamente” (só ler): prefira testar (questões/resumo sem olhar). Não registrar erros : você repete o erro no simulado. Próximo passo: Exercícios ."
+  },
+  {
+    "title": "Exercícios e banco",
+    "url": "docs/exercises/",
+    "section": "Documentação",
+    "content": "Exercícios e banco Página: Exercícios Exercícios são onde o estudo “vira nota”. O app inclui um banco e um modo de prática (tipo quiz) para manter consistência. Rotina recomendada ¶ Após cada sessão de teoria: 10–20 min de exercícios. Semanalmente: 1 bloco só para erros (o que você errou/por quê). Como usar bem ¶ 1) Faça com tempo ¶ Questões fáceis demais sem pressão não ajudam na prova. Coloque limite. 2) Registre erro (sem drama) ¶ Quando errar, registre: o que você errou, por que errou, como vai corrigir. Isso cria um “banco de erros” valioso para revisão. 3) Misture por assunto ¶ Evite fazer 30 exercícios iguais seguidos. Mistura aumenta retenção. Dicas avançadas ¶ “Errou por distração?” → inclua uma regra (ex.: ler enunciado 2x). “Errou por conteúdo?” → volte ao módulo e marque revisão. Próximo passo (discursiva): Redação ."
+  },
+  {
+    "title": "Redação",
+    "url": "docs/writing/",
+    "section": "Documentação",
+    "content": "Redação Página: Redação A redação é uma habilidade: você melhora com volume + feedback + correção por rubrica . Rotina mínima (funciona) ¶ 1 redação/semana nas primeiras semanas 2 redações/semana na reta final Revisão de “estrutura” a cada texto Estrutura sugerida (genérica) ¶ Introdução: tese + recorte Desenvolvimento 1: argumento + evidência Desenvolvimento 2: argumento + evidência Conclusão: síntese + proposta (quando aplicável) Ajuste ao modelo cobrado no seu curso/trilha. Como usar o app ¶ Escolha um tema (o app traz prompts) Escreva ou cole o texto Registre: data, autoavaliação (se quiser), pontos de melhoria Checklist de correção (rápido) ¶ Atendeu ao tema e recorte? Tese clara? Argumentos sustentados? Coesão (conectivos)? Norma/pontuação adequadas? Conclusão consistente? Próximo passo: Obras e Simulados ."
+  },
+  {
+    "title": "Obras",
+    "url": "docs/literature/",
+    "section": "Documentação",
+    "content": "Obras Página: Obras Para trilhas que exigem leitura de obras, o app organiza: lista de obras, progresso por obra, notas rápidas e marcos (capítulos/temas). Como usar ¶ Defina uma meta realista: capítulos por semana. Faça revisões curtas (resumos + personagens + temas). Antes de simulados: releia suas notas e faça 5 perguntas-chave por obra. Dica prática: “cartão de obra” ¶ Para cada obra, mantenha: enredo (3 linhas), personagens centrais, temas recorrentes, 3 citações/frases-chave, 2 conexões com atualidades. Isso acelera redação/discursiva. Próximo passo: Simulados ."
+  },
+  {
+    "title": "Simulados",
+    "url": "docs/simulados/",
+    "section": "Documentação",
+    "content": "Simulados Página: Simulados Simulado mede performance: tempo, controle emocional e estratégia. Frequência sugerida ¶ Base: 1 simulado a cada 2 semanas Reta final: 1 por semana (ou parcial por bloco) Como fazer valer ¶ Antes ¶ Prepare ambiente e tempo real. Defina objetivo: velocidade? acurácia? resistência? Durante ¶ Use o cronômetro. Marque questões “incertas” para voltar no fim. Evite ficar preso: tempo máximo por questão. Depois (o que quase ninguém faz) ¶ Corrija e registre: erros de conteúdo, erros de interpretação, erros de tempo/estratégia. O “pós-simulado” é onde o ganho real acontece. Checklist pós-simulado ¶ Quais matérias derrubaram a nota? Qual foi o maior tipo de erro? O tempo estourou onde? Qual ajuste para o próximo? Próximo passo: Calendário e Estatísticas ."
+  },
+  {
+    "title": "Calendário",
+    "url": "docs/calendar/",
+    "section": "Documentação",
+    "content": "Calendário Página: Calendário O calendário serve para visualizar: o que foi feito (histórico), o que está planejado, compromissos relevantes (quando você registra tarefas). Usos comuns ¶ revisar semanalmente (domingo): o que rendeu, o que ficou pendente, ajustar a próxima semana. identificar “buracos” (dias sem estudo) e corrigir a agenda. Dica ¶ Não use o calendário para “se culpar”. Use para decidir o próximo ajuste ."
+  },
+  {
+    "title": "Estatísticas",
+    "url": "docs/stats/",
+    "section": "Documentação",
+    "content": "Estatísticas Página: Estatísticas Estatísticas ajudam a evitar autoengano: você vê o que está praticando de verdade. Métricas úteis ¶ minutos totais e sessões (Pomodoro) streak (sequência) — útil como motivação, não como meta absoluta evolução por matéria/módulo (domínio/revisões) Como interpretar sem paranoia ¶ Use tendências semanais/mensais (não o dia isolado). Quando cair: ajuste carga ou disponibilidade (não “força de vontade”). Revisão semanal recomendada (10 min) ¶ Qual matéria está “sangrando” mais erros? O plano está realista? Estou revisando antes de esquecer? Preciso reduzir o escopo? Próximo passo: Backup e restauração ."
+  },
+  {
+    "title": "Backup e restauração",
+    "url": "docs/backup-restore/",
+    "section": "Documentação",
+    "content": "Backup e restauração O app salva tudo localmente (no navegador) usando localStorage . Isso significa: sem login , mas você é responsável pelo backup . Por que você pode perder dados? ¶ limpeza de dados do navegador, modo anônimo/privado, reinstalação do sistema, extensão que limpa storage, múltiplos dispositivos (cada um tem seu próprio storage). Como fazer backup (export) ¶ No app, abra a área de sobre (ou configurações, se houver opção de export). Use a função de Exportar e salve o arquivo .json . O arquivo é texto (JSON). Ele pode conter seu histórico de estudo, então trate como dado pessoal. Como restaurar (import) ¶ Abra o app. Use Importar e selecione o arquivo .json . Recarregue a página, se necessário. Boas práticas (recomendado) ¶ Backup semanal (domingo) + backup antes de atualização grande. Guardar em 2 lugares (computador + nuvem pessoal/pendrive). Nomear por data: backup-2026-01-13.json . Compatibilidade e migração ¶ O estado tem versionamento simples e uma rotina de “merge” mínimo para compatibilidade futura. Para detalhes do schema, veja: Modelo de dados do storage ."
+  },
+  {
+    "title": "Modo offline (PWA)",
+    "url": "docs/offline/",
+    "section": "Documentação",
+    "content": "Modo offline (PWA) O app registra um Service Worker simples para cachear arquivos essenciais (HTML/CSS/JS/dados). Isso permite abrir o app mesmo sem internet depois do primeiro carregamento . Como confirmar que está offline ¶ Abra o app normalmente. Depois, desligue a internet. Recarregue a página: o app deve abrir. Limitações (importante) ¶ O cache é focado no app em /app/ . Se você mudar o app e publicar uma nova versão, o cache antigo pode permanecer até a próxima atualização do SW. Forçar atualização ¶ Recarregue a página com hard refresh (varia por navegador). Ou limpe o “armazenamento do site” nas configurações do navegador (isso também limpa dados — faça backup antes!). Referência técnica ¶ Lista de arquivos “core” cacheados: Service Worker e cache ."
+  },
+  {
+    "title": "Privacidade",
+    "url": "docs/privacy/",
+    "section": "Documentação",
+    "content": "Privacidade O Planner UEL Pro foi desenhado para ser local‑first : sem login, sem servidor, sem analytics embutido, sem cookies de rastreamento. O que fica armazenado? ¶ suas configurações, progresso por módulo, tarefas/rotina, redações registradas, histórico (pomodoro, erros etc). Tudo fica no navegador, em localStorage . Recomendações ¶ Não use em computador público. Faça backup e guarde com cuidado (pode conter seu texto de redação e histórico). Se você publicar seu fork, evite adicionar chaves/tokens ao repositório (Pages pode ser público). Transparência ¶ Se você alterar o app (ex.: adicionar integrações), documente aqui e em CHANGELOG."
+  },
+  {
+    "title": "Compatibilidade de navegador",
+    "url": "docs/browser-support/",
+    "section": "Documentação",
+    "content": "Compatibilidade de navegador O app é um site estático moderno e funciona melhor em navegadores atualizados. Requisitos mínimos (práticos) ¶ suporte a localStorage suporte a serviceWorker (para offline) suporte a módulos ES ( type=\"module\" ) Dicas ¶ Em iOS/Safari, o modo “Adicionar à tela inicial” pode melhorar o uso como app. Em modo anônimo, o armazenamento pode ser limpo ao fechar. Problemas comuns ¶ “Perdi meus dados” : geralmente limpeza de storage. Veja: Backup e restauração . “Não atualiza” : pode ser cache do SW. Veja: Modo offline ."
+  },
+  {
+    "title": "Customizar o site (tema)",
+    "url": "docs/site-customization/",
+    "section": "Documentação",
+    "content": "Customizar o site (tema) Este site usa o tema Just the Docs , que é responsivo e tem busca embutida. Tema: https://just-the-docs.com Como usamos remote_theme , o repositório não precisa “copiar” os arquivos do tema — o tema é baixado no build do Pages. Onde personalizar ¶ _config.yml — título, descrição, logo, coleções assets/css/just-the-docs.scss — overrides de CSS (leve) _includes/head_custom.html — meta extra / scripts (evite JS pesado) _includes/header_custom.html / _includes/footer_custom.html — links do header/footer Boas práticas ¶ Evite alterar HTML do tema sem necessidade. Prefira CSS pequeno e bem documentado. Use links com relative_url para não quebrar com baseurl ."
+  },
+  {
+    "title": "Estratégia de estudo",
+    "url": "docs/study-strategy/",
+    "section": "Documentação",
+    "content": "Estratégia de estudo (prática) Esta página é para quem quer uma estratégia “pé no chão” usando o app. Se você tem pouco tempo (≤ 8h/semana) ¶ 60% revisões + exercícios 20% teoria (módulos) 20% simulados parciais Meta: consistência > volume. Se você tem tempo médio (10–18h/semana) ¶ 40% teoria (módulos) 30% revisões 20% exercícios 10% simulado/redação Meta: cobrir base + consolidar. Se você tem muito tempo (≥ 20h/semana) ¶ 35% teoria 25% revisões 25% exercícios 15% simulados/redação Meta: dominar e treinar performance. Como o app te ajuda nisso ¶ Configuração define capacidade real . Plano semanal distribui sessões. Revisões garantem retenção. Estatísticas mostram o que você realmente fez. Checklist semanal (10 min) ¶ Ajustei disponibilidade (se mudou)? Fiz backup? Identifiquei 1 matéria “gargalo”? Planejei 1 simulado (ou parcial)?"
+  },
+  {
+    "title": "Editar conteúdo do app (JSON)",
+    "url": "docs/content-maintenance/",
+    "section": "Documentação",
+    "content": "Editar conteúdo do app (JSON) O app usa arquivos JSON para conteúdo base. Isso permite manter tudo simples e versionado no GitHub. Arquivos ¶ app/assets/data/content.json — matérias, módulos, obras app/assets/data/exercises.json — banco de exercícios app/assets/data/writing_prompts.json — prompts de redação Boas práticas ¶ Não mude IDs antigos (isso quebra progresso de usuários). Prefira adicionar novos itens. Se precisar “aposentar” algo, use tags e esconda via UI (ou documente). Validar antes de publicar ¶ Use um validador JSON ou rode localmente e navegue pelo app. Referência de schema: content.json exercises.json writing_prompts.json"
+  },
+  {
+    "title": "Referência",
+    "url": "reference/",
+    "section": "Referência",
+    "content": "Referência Material de consulta rápida (mais técnico / direto ao ponto). Atalhos de teclado Schema do storage (backup) Modelo de conteúdo ( content.json ) Banco de exercícios ( exercises.json ) Prompts de redação ( writing_prompts.json ) Service Worker e cache Rotas e URLs"
+  },
+  {
+    "title": "Atalhos de teclado",
+    "url": "reference/shortcuts/",
+    "section": "Referência",
+    "content": "Atalhos de teclado App ¶ Ctrl/⌘ + K → foco na busca rápida (quando o campo existe na página) Esc → fechar drawer/modais (quando aplicável) O app foi implementado com atalho Ctrl/⌘+K no shell ( app/assets/js/app.js ). Navegação rápida ¶ Mesmo sem atalhos adicionais, você pode usar: menu lateral (desktop) drawer (mobile) Sugestão (se você for evoluir) ¶ Se adicionar atalhos por página, documente aqui e mantenha consistência: Ctrl/⌘ + Enter para “salvar” ? para abrir ajuda"
+  },
+  {
+    "title": "Backup (guia rápido)",
+    "url": "reference/data-backup/",
+    "section": "Referência",
+    "content": "Backup (guia rápido) Resumo direto: dados ficam no navegador ( localStorage ), faça export semanal, guarde em 2 lugares, importe para restaurar. Guia completo: Backup e restauração . Arquivo de exemplo ¶ assets/downloads/modelo-backup.json (apenas exemplo/estrutura)"
+  },
+  {
+    "title": "Offline e PWA (guia rápido)",
+    "url": "reference/offline/",
+    "section": "Referência",
+    "content": "Offline e PWA (guia rápido) O app registra Service Worker para cache offline. O cache é versionado por uma string ( CACHE ). Mudanças grandes → incremente CACHE para forçar atualização. Guia completo: Modo offline ."
+  },
+  {
+    "title": "Schema do storage",
+    "url": "reference/storage-schema/",
+    "section": "Referência",
+    "content": "Schema do storage O app salva estado no localStorage usando a chave: uel_planner_pro:v2 Arquivo-fonte: app/assets/js/storage.js . Estrutura (alto nível) ¶ { \"meta\" : { \"createdAt\" : \"...\" , \"updatedAt\" : \"...\" , \"version\" : \"2.0.0\" }, \"config\" : { \"examDate\" : \"YYYY-MM-DD\" , \"track\" : \"geral|discursiva\" , \"targetCourse\" : \"\" , \"language\" : \"ingles|espanhol\" , \"sessionMinutes\" : 50 , \"weeklyHoursTarget\" : 18 , \"availability\" : { \"mon\" : 120 , \"tue\" : 120 , \"...\" : 120 }, \"strengths\" : { \"lp\" : 2 , \"mat\" : 1 } }, \"progress\" : { \"modules\" : { \"lp_mod_01\" : { \"mastery\" : 2 , \"lastStudied\" : \"...\" , \"nextReview\" : \"...\" , \"lapses\" : 1 } }, \"streak\" : { \"current\" : 0 , \"best\" : 0 , \"lastActive\" : \"\" }, \"pomodoro\" : { \"totalMinutes\" : 0 , \"sessions\" : [ { \"date\" : \"YYYY-MM-DD\" , \"minutes\" : 50 , \"subjectId\" : \"lp\" } ] } }, \"tasks\" : [], \"flashcards\" : [], \"submissions\" : [], \"errors\" : [] } Campos importantes ¶ config.availability : minutos por dia (base do plano semanal) progress.modules : progresso e revisões por módulo errors : banco de erros (o que/por quê/como corrigir) submissions : redações registradas Compatibilidade (migração) ¶ A função migrate() faz um merge simples: garante que campos essenciais existam, preserva chaves desconhecidas (forward‑compat). Isso facilita evoluir versões sem quebrar backups antigos."
+  },
+  {
+    "title": "Modelo de conteúdo (content.json)",
+    "url": "reference/content-data/",
+    "section": "Referência",
+    "content": "Modelo de conteúdo ( content.json ) Caminho: app/assets/data/content.json Este arquivo define o conteúdo base do app: matérias ( subjects ) módulos ( modules ) literatura ( literature ) metadados (modelo de prova e trilhas) Estrutura principal ¶ { \"meta\" : { \"...\" : \"...\" }, \"examModel\" : { \"...\" : \"...\" }, \"subjects\" : [ { \"id\" : \"lp\" , \"name\" : \"Língua Portuguesa...\" , \"short\" : \"Português\" } ], \"modules\" : [ { \"id\" : \"lp_mod_01\" , \"subjectId\" : \"lp\" , \"title\" : \"Interpretação\" , \"goals\" : [ \"...\" ], \"checklist\" : [ \"...\" ], \"resources\" : [ { \"title\" : \"...\" , \"url\" : \"...\" } ], \"practice\" : [ \"...\" ], \"tags\" : [ \"...\" ], \"estSessions\" : 2 } ], \"coursesDiscursive\" : [ \"...\" ], \"literature\" : [ { \"id\" : \"obra_01\" , \"title\" : \"...\" , \"author\" : \"...\" } ] } Convenções recomendadas ¶ id deve ser estável (não mude IDs após publicar — isso quebra progresso). subjectId deve existir em subjects . resources.url deve ser link estável (evite links que expiram). Como adicionar um módulo ¶ Escolha a matéria ( subjectId ) Crie um id único e estável (ex.: lp_mod_10 ) Preencha objetivos/checklist/prática Ajuste estSessions (estimativa de sessões) Impacto no app ¶ A lista de módulos é usada em Módulos , Plano semanal , Revisões e Estatísticas . Se você remover módulos existentes, usuários podem ver “lacunas” no progresso. Boa prática: em vez de remover, prefira marcar como “deprecated” por tag e esconder via filtro."
+  },
+  {
+    "title": "Banco de exercícios (exercises.json)",
+    "url": "reference/exercises-data/",
+    "section": "Referência",
+    "content": "Banco de exercícios ( exercises.json ) Caminho: app/assets/data/exercises.json Define o banco de questões (formato simples, tipo quiz). Estrutura ¶ { \"meta\" : { \"...\" : \"...\" }, \"exercises\" : [ { \"id\" : \"lp1\" , \"subjectId\" : \"lp\" , \"stem\" : \"Enunciado...\" , \"choices\" : [ \"A\" , \"B\" , \"C\" , \"D\" ], \"answerIndex\" : 1 , \"explanation\" : \"Explicação (por que a alternativa é correta)\" , \"tags\" : [ \"argumentação\" ], \"difficulty\" : 1 } ] } Regras recomendadas ¶ id deve ser único e estável. subjectId deve existir em content.json/subjects . answerIndex deve apontar para choices (0‑based). difficulty : use escala curta (ex.: 1 a 3) para manter consistência. Boas práticas de conteúdo ¶ Enunciado claro (sem “pegadinha” sem objetivo). Explicação curta e útil (evite só “porque sim”). Tags ajudam a filtrar e planejar revisões. Dica: adicionar fonte ¶ Se você quiser, pode adicionar source e year (campos extras) — o schema do storage preserva chaves desconhecidas."
+  },
+  {
+    "title": "Prompts de redação (writing_prompts.json)",
+    "url": "reference/writing-prompts/",
+    "section": "Referência",
+    "content": "Prompts de redação ( writing_prompts.json ) Caminho: app/assets/data/writing_prompts.json Usado para sugerir temas e checkpoints de correção. Estrutura ¶ { \"meta\" : { \"...\" : \"...\" }, \"prompts\" : [ { \"id\" : \"red-001\" , \"axis\" : \"Educação e cidadania\" , \"theme\" : \"Educação e cidadania: tema 1\" , \"prompt\" : \"Texto do enunciado...\" , \"checkpoints\" : [ \"Delimite o tema em uma tese clara (1 frase).\" , \"Traga 2 argumentos com evidências.\" , \"Conclua com síntese + encaminhamentos.\" ] } ] } Boas práticas ¶ axis organiza e ajuda a variar repertório. Checkpoints devem ser objetivos e avaliáveis. Evite prompts muito longos: prefira enunciado + requisitos. Extensões úteis ¶ Você pode adicionar campos como timeLimitMin , tags ou model (ex.: ENEM/UEL) sem quebrar o app (o schema preserva chaves desconhecidas)."
+  },
+  {
+    "title": "Service Worker e cache",
+    "url": "reference/service-worker-cache/",
+    "section": "Referência",
+    "content": "Service Worker e cache Arquivo: app/assets/js/sw.js O Service Worker implementa um cache simples (Cache Storage) para permitir uso offline. Estratégia ¶ Cache prévio (install): adiciona um conjunto “core” de arquivos essenciais. Cache dinâmico (fetch): se não estiver no cache, busca e armazena. Versionamento ¶ A variável CACHE define o nome do cache. Quando você muda esse valor (ex.: v2 → v3 ), o SW apaga caches antigos no activate . Boa prática: troque o CACHE quando fizer mudanças grandes de assets. Lista de arquivos core ¶ O array CORE inclui HTML das páginas do app, CSS/JS e JSON de dados. Se você adicionar novas páginas/arquivos essenciais, inclua aqui também. Armadilhas ¶ Se o app “não atualiza”, normalmente é cache. Limpar dados do site remove cache e progresso (faça backup antes)."
+  },
+  {
+    "title": "Rotas e URLs",
+    "url": "reference/urls/",
+    "section": "Referência",
+    "content": "Rotas e URLs Este projeto é hospedado como site estático. Site (Jekyll) ¶ Home: / Docs: /docs/… Referência: /reference/… Downloads: /downloads/ 404: /404.html As URLs são “bonitas” ( permalink: pretty ). App ¶ O app fica em: /app/ (index) páginas: /app/planner.html , /app/reviews.html , etc. Isso foi feito para não depender do Jekyll dentro do app. Project Pages vs User Pages ¶ No GitHub Pages: User/Org Pages: https://usuario.github.io/ Project Pages: https://usuario.github.io/nome-do-repo/ Por isso o site usa relative_url e o _config.yml tem baseurl . Guia: Publicar no GitHub Pages ."
+  }
+]

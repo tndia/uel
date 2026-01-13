@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Modelo de conteúdo (content.json) · Planner UEL Pro</title>
+  
+  <meta property="og:title" content="Modelo de conteúdo (content.json)">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <link rel="canonical" href="">
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../../">
+      <img src="../../assets/img/logo.svg" alt="" width="28" height="28">
+      <span>Planner UEL Pro</span>
+    </a>
+
+    <button class="icon-btn mobile-only" type="button" aria-label="Abrir menu" data-toggle="nav">
+      <span class="icon icon-menu" aria-hidden="true"></span>
+    </button>
+
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a class="" href="../../">Início</a>
+      <a class="" href="../../docs/">Documentação</a>
+      <a class="active" href="../../reference/">Referência</a>
+      <a href="../../app/">App</a>
+      <a href="../../downloads/">Downloads</a>
+      <a href="../../faq/">FAQ</a>
+      <a href="https://github.com/tndia/uel" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="search" placeholder="Buscar… (Ctrl/⌘ K)" aria-label="Buscar no site" id="site-search">
+        <div class="search-results" id="search-results" hidden></div>
+      </div>
+
+      <button class="icon-btn" type="button" aria-label="Alternar tema" data-toggle="theme">
+        <span class="icon icon-sun" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="layout layout-doc">
+  
+  <aside class="sidebar" id="sidebar" aria-label="Navegação lateral">
+    <div class="sidebar-inner">
+      <div class="sidebar-search mobile-only">
+        <input type="search" placeholder="Buscar…" aria-label="Buscar no site" id="site-search-mobile">
+      </div>
+      
+    <div class="nav-block">
+      <div class="callout tip">
+        <strong>Atalho</strong>
+        Use <code>Ctrl/⌘ + K</code> para buscar em qualquer página.
+      </div>
+    </div>
+    
+        <details  class="nav-section">
+          <summary>Documentação</summary>
+          <div class="nav-links"><a class="" href="../../docs/backup-restore/">Backup e restauração</a>
+<a class="" href="../../docs/getting-started/">Primeiros passos</a>
+<a class="" href="../../docs/publish/">Publicar no GitHub Pages</a>
+<a class="" href="../../docs/setup/">Configuração</a>
+<a class="" href="../../docs/offline/">Modo offline (PWA)</a>
+<a class="" href="../../docs/local-development/">Rodar localmente</a>
+<a class="" href="../../docs/architecture/">Arquitetura do repositório</a>
+<a class="" href="../../docs/planning/">Plano semanal</a>
+<a class="" href="../../docs/privacy/">Privacidade</a>
+<a class="" href="../../docs/browser-support/">Compatibilidade de navegador</a>
+<a class="" href="../../docs/site-customization/">Customizar o site (tema)</a>
+<a class="" href="../../docs/modules/">Módulos e conteúdo</a>
+<a class="" href="../../docs/content-maintenance/">Editar conteúdo do app (JSON)</a>
+<a class="" href="../../docs/reviews/">Revisão espaçada</a>
+<a class="" href="../../docs/exercises/">Exercícios e banco</a>
+<a class="" href="../../docs/writing/">Redação</a>
+<a class="" href="../../docs/literature/">Obras</a>
+<a class="" href="../../docs/simulados/">Simulados</a>
+<a class="" href="../../docs/calendar/">Calendário</a>
+<a class="" href="../../docs/">Documentação</a>
+<a class="" href="../../docs/guia-de-uso/">Guia de uso</a>
+<a class="" href="../../docs/stats/">Estatísticas</a>
+<a class="" href="../../docs/study-strategy/">Estratégia de estudo</a>
+<a class="" href="../../docs/manutencao/">Manutenção e dados</a>
+<a class="" href="../../docs/publicacao/">Publicação</a></div>
+        </details>
+        
+        <details open class="nav-section">
+          <summary>Referência</summary>
+          <div class="nav-links"><a class="" href="../../reference/shortcuts/">Atalhos de teclado</a>
+<a class="" href="../../reference/storage-schema/">Schema do storage</a>
+<a class="" href="../../reference/data-backup/">Backup (guia rápido)</a>
+<a class="active" href="../../reference/content-data/">Modelo de conteúdo (content.json)</a>
+<a class="" href="../../reference/">Referência</a>
+<a class="" href="../../reference/exercises-data/">Banco de exercícios (exercises.json)</a>
+<a class="" href="../../reference/writing-prompts/">Prompts de redação (writing_prompts.json)</a>
+<a class="" href="../../reference/service-worker-cache/">Service Worker e cache</a>
+<a class="" href="../../reference/urls/">Rotas e URLs</a>
+<a class="" href="../../reference/offline/">Offline e PWA (guia rápido)</a></div>
+        </details>
+        
+        <details  class="nav-section">
+          <summary>Projeto</summary>
+          <div class="nav-links"><a class="" href="../../downloads/">Downloads</a>
+<a class="" href="../../faq/">FAQ</a>
+<a class="" href="../../license/">Licença</a>
+<a class="" href="../../troubleshooting/">Troubleshooting</a>
+<a class="" href="../../changelog/">Changelog</a>
+<a class="" href="../../about/">Sobre</a>
+<a class="" href="../../contact/">Contato</a>
+<a class="" href="../../contributing/">Contribuindo</a></div>
+        </details>
+        
+      <div class="sidebar-footer">
+        <a href="https://github.com/tndia/uel" target="_blank" rel="noreferrer">Ver no GitHub</a>
+        <a href="../../contact/">Contato</a>
+      </div>
+    </div>
+  </aside>
+  
+
+  <main id="main" class="content">
+    
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+      <span class="crumbs"><a href="../../">Início</a> <span class='sep'>/</span> <a href="../../reference/">Referência</a> <span class='sep'>/</span> <span aria-current="page">Modelo de conteúdo (content.json)</span></span>
+    </nav>
+    
+    <article class="article">
+      <h1>Modelo de conteúdo (<code>content.json</code>)</h1>
+<p>Caminho: <code>app/assets/data/content.json</code></p>
+<p>Este arquivo define o <strong>conteúdo base</strong> do app:</p>
+<ul>
+<li>matérias (<code>subjects</code>)</li>
+<li>módulos (<code>modules</code>)</li>
+<li>literatura (<code>literature</code>)</li>
+<li>metadados (modelo de prova e trilhas)</li>
+</ul>
+<h2 id="estrutura-principal">Estrutura principal<a aria-label="Link permanente" class="heading-anchor" href="#estrutura-principal">¶</a></h2>
+<div class="codehilite">
+<pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">"examModel"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"..."</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">"subjects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lp"</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Língua Portuguesa..."</span><span class="p">,</span><span class="w"> </span><span class="nt">"short"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Português"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">"modules"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lp_mod_01"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"subjectId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lp"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Interpretação"</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"goals"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"..."</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">"checklist"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"..."</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">"resources"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="p">,</span><span class="w"> </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">"practice"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"..."</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"..."</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">"estSessions"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">"coursesDiscursive"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">"..."</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">"literature"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"obra_01"</span><span class="p">,</span><span class="w"> </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="p">,</span><span class="w"> </span><span class="nt">"author"</span><span class="p">:</span><span class="w"> </span><span class="s2">"..."</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+<h2 id="convencoes-recomendadas">Convenções recomendadas<a aria-label="Link permanente" class="heading-anchor" href="#convencoes-recomendadas">¶</a></h2>
+<ul>
+<li><code>id</code> deve ser estável (não mude IDs após publicar — isso quebra progresso).</li>
+<li><code>subjectId</code> deve existir em <code>subjects</code>.</li>
+<li><code>resources.url</code> deve ser link estável (evite links que expiram).</li>
+</ul>
+<h2 id="como-adicionar-um-modulo">Como adicionar um módulo<a aria-label="Link permanente" class="heading-anchor" href="#como-adicionar-um-modulo">¶</a></h2>
+<ol>
+<li>Escolha a matéria (<code>subjectId</code>)</li>
+<li>Crie um <code>id</code> único e estável (ex.: <code>lp_mod_10</code>)</li>
+<li>Preencha objetivos/checklist/prática</li>
+<li>Ajuste <code>estSessions</code> (estimativa de sessões)</li>
+</ol>
+<h2 id="impacto-no-app">Impacto no app<a aria-label="Link permanente" class="heading-anchor" href="#impacto-no-app">¶</a></h2>
+<ul>
+<li>A lista de módulos é usada em <strong>Módulos</strong>, <strong>Plano semanal</strong>, <strong>Revisões</strong> e <strong>Estatísticas</strong>.</li>
+<li>Se você remover módulos existentes, usuários podem ver “lacunas” no progresso.</li>
+</ul>
+<blockquote>
+<p>Boa prática: em vez de remover, prefira marcar como “deprecated” por tag e esconder via filtro.</p>
+</blockquote>
+
+      
+      <p class="edit-link"><a href="https://github.com/tndia/uel/blob/main/site-src/_reference/content-data.md" target="_blank" rel="noreferrer">Editar esta página no GitHub</a></p>
+      
+    </article>
+  </main>
+
+  
+  <aside class="toc" aria-label="Nesta página">
+    <div class="toc-inner">
+      <div class="toc-title">Nesta página</div>
+      <nav><a class="lvl2" href="#estrutura-principal">Estrutura principal</a><a class="lvl2" href="#convencoes-recomendadas">Convenções recomendadas</a><a class="lvl2" href="#como-adicionar-um-modulo">Como adicionar um módulo</a><a class="lvl2" href="#impacto-no-app">Impacto no app</a></nav>
+    </div>
+  </aside>
+  
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Planner UEL Pro</strong><br>
+      <span class="muted">Local-first · Offline · Privacidade</span>
+    </div>
+    <div class="footer-links">
+      <a href="../../about/">Sobre</a>
+      <a href="../../license/">Licença</a>
+      <a href="../../contributing/">Contribuindo</a>
+      <a href="https://github.com/tndia/uel/issues" target="_blank" rel="noreferrer">Issues</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" type="button" aria-label="Voltar ao topo" data-toggle="top" hidden>↑</button>
+
+<script>window.__ROOT__="../../"; window.SITE_REPO_URL="https://github.com/tndia/uel";</script>
+<script src="../../assets/js/site.js"></script>
+</body>
+</html>
